@@ -1,0 +1,67 @@
+name: "CodeQL"
+
+on:
+  # push:
+  # pull_request:
+  # schedule:
+  #   - cron: '45 18 * * 2'
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: macos-14
+    timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
+    permissions:
+      # required for all workflows
+      security-events: write
+
+      # only required for workflows in private repositories
+      actions: read
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'c-cpp', 'swift' ]
+        # CodeQL supports [ 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift' ]
+        # Use only 'java-kotlin' to analyze code written in Java, Kotlin or both
+        # Use only 'javascript-typescript' to analyze code written in JavaScript, TypeScript or both
+        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Prepare theos
+      uses: Randomblock1/theos-action@v1.4
+      with:
+        theos-src: 'https://github.com/roothide/theos'
+        theos-sdks: 'https://github.com/chrisharper22/sdks'
+        theos-sdks-branch: 'main'
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        languages: ${{ matrix.language }}
+        # If you wish to specify custom queries, you can do so here or in a config file.
+        # By default, queries listed here will override any specified in a config file.
+        # Prefix the list here with "+" to use these queries and those in the config file.
+
+        # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
+        # queries: security-extended,security-and-quality
+
+    # Attemps to build the code
+    - name: Build (C++)
+      if: matrix.language == 'c-cpp'
+      run: make -C RootHelper
+    
+    - name: Build (Swift)
+      if: matrix.language == 'swift'
+      run: make
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3
+      with:
+        category: "/language:${{matrix.language}}"

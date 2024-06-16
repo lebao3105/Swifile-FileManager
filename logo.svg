@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="820"
+   height="462"
+   viewBox="0 0 820 462"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#353535"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:export-bgcolor="#000000db"
+     inkscape:zoom="0.63786801"
+     inkscape:cx="414.66259"
+     inkscape:cy="222.61659"
+     inkscape:window-width="1280"
+     inkscape:window-height="671"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g12" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Tầng Lớp 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g12"
+       transform="matrix(0.67119104,-0.06319278,0.06319278,0.67119104,202.0115,100.21617)">
+      <g
+         id="g14"
+         transform="translate(14.49867,-11.871163)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Marker Felt';-inkscape-font-specification:'Marker Felt';fill:#ff0900;stroke:#ffffff;stroke-width:6.67087;stroke-opacity:1"
+           x="318.12769"
+           y="230.14574"
+           id="text1"
+           transform="matrix(1.4568148,0.279205,-0.279205,1.4568148,-284.39605,-176.0869)"><tspan
+             sodipodi:role="line"
+             id="tspan1"
+             x="318.12769"
+             y="230.14574"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Motley Forces';-inkscape-font-specification:'Motley Forces'">S</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Motley Forces';-inkscape-font-specification:'Motley Forces';fill:#ff0900;stroke:#ffffff;stroke-width:6.67087"
+           x="382.25778"
+           y="198.39886"
+           id="text2"
+           transform="matrix(1.4232798,0.41777914,-0.41777914,1.4232798,-284.39605,-176.0869)"><tspan
+             sodipodi:role="line"
+             id="tspan2"
+             x="382.25778"
+             y="198.39886">w</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Motley Forces';-inkscape-font-specification:'Motley Forces';fill:#ff0900;stroke:#ffffff;stroke-width:6.67087"
+           x="417.42603"
+           y="273.25513"
+           id="text3"
+           transform="matrix(1.4767981,0.13904085,-0.13904085,1.4767981,-284.39605,-176.0869)"><tspan
+             sodipodi:role="line"
+             id="tspan3"
+             x="417.42603"
+             y="273.25513">i</tspan></text>
+        <g
+           id="g13"
+           transform="translate(-31.308412,10.203017)">
+          <rect
+             style="fill:#ff0900;stroke:#ffffff;stroke-width:6.67087"
+             id="rect7"
+             width="90.572784"
+             height="112.84478"
+             x="368.97275"
+             y="177.43356"
+             ry="14.848011" />
+          <rect
+             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6.67087"
+             id="rect10"
+             width="36.364101"
+             height="7.4791489"
+             x="383.75745"
+             y="202.19478"
+             ry="0" />
+          <rect
+             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.77561"
+             id="rect11"
+             width="49.405724"
+             height="7.4791489"
+             x="383.75745"
+             y="214.19478"
+             ry="0" />
+          <rect
+             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6.67087"
+             id="rect12"
+             width="36.364101"
+             height="7.4791489"
+             x="383.75745"
+             y="226.19478"
+             ry="0" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

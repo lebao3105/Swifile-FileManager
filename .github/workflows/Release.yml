@@ -1,0 +1,34 @@
+name: Make a new binary build
+
+on:
+  push:
+    tags:
+      - 'v*'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+
+  build-and-make:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare theos
+        uses: Randomblock1/theos-action@v1.4
+        with:
+          theos-src: 'https://github.com/roothide/theos'
+          theos-sdks: 'https://github.com/chrisharper22/sdks'
+          theos-sdks-branch: 'main'
+
+      - name: Build
+        run: |
+          make package FINAL_PACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+          make package FINAL_PACKAGE=1 THEOS_PACKAGE_SCHEME=rootful
+          make package FINAL_PACKAGE=1
+
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: "Swifile"
+          path: ${{ github.workspace }}/packages/*.deb
