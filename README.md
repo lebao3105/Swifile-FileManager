@@ -7,6 +7,7 @@
 Swifile is a simple SwiftUI application for managing files and folders on your device. 
 
 > This application is meant for jailbroken devices. A personal (just me, @lebao3105) work is underway for more platforms.
+> See it here: https://github.com/lebao3105/OnStorage.
 
 Swifile provides a user-friendly interface to browse, search, and manage files and folders on your device. It allows you to toggle file size visibility, sort files by various criteria, and perform actions such as opening, deleting, and sharing files.
 
@@ -67,7 +68,7 @@ Look at Theos documentation for useful environment variables and options (you wi
 
 Profit!
 
-### Use with FridaCodeManager (SparkCode)
+### Use with FridaCodeManager
 
 FridaCodeManager by SparkleChan + SeanIsNotAConstant is a way to build, make, run Swift and ObjectiveC{,++}.
 
@@ -75,7 +76,7 @@ This app is originally made in SparkCode!
 
 Currently as this is not confirmed to work with SparkCode yet, as the new C++ helper came along with support for them in SparkCode, also new features, also nobody try it yet (as far as we know).
 
-You can try packing the source code to a ZIP with the right structure that fits Frida, import it.
+You can try packing the source code to an archive with the right structure that fits Frida, import it.
 
 ## Screenshots
 
